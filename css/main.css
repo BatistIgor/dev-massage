@@ -183,35 +183,35 @@ select {
 
 @font-face {
   font-family: "MAREGY";
-  src: url("../../assets/fonts/MAREGY-Regular.woff2") format("woff2"), url("../../assets/fonts/MAREGY-Regular.woff") format("woff");
+  src: url("../assets/fonts/MAREGY-Regular.woff2") format("woff2"), url("../assets/fonts/MAREGY-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter";
-  src: url("../../assets/fonts/Inter-Light.woff2") format("woff2"), url("../../assets/fonts/Inter-Light.woff") format("woff");
+  src: url("../assets/fonts/Inter-Light.woff2") format("woff2"), url("../assets/fonts/Inter-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter";
-  src: url("../../assets/fonts/Inter-Bold.woff2") format("woff2"), url("../../assets/fonts/Inter-Bold.woff") format("woff");
+  src: url("../assets/fonts/Inter-Bold.woff2") format("woff2"), url("../assets/fonts/Inter-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter";
-  src: url("../../assets/fonts/Inter-Regular.woff2") format("woff2"), url("../../assets/fonts/Inter-Regular.woff") format("woff");
+  src: url("../assets/fonts/Inter-Regular.woff2") format("woff2"), url("../assets/fonts/Inter-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../../assets/fonts/Montserrat-Regular.woff2") format("woff2"), url("../../assets/fonts/Montserrat-Regular.woff") format("woff");
+  src: url("../assets/fonts/Montserrat-Regular.woff2") format("woff2"), url("../assets/fonts/Montserrat-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
