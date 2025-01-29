@@ -1,0 +1,114 @@
+.comments {
+  scroll-margin-top: 130px;
+
+  & > .container {
+    max-width: 678px;
+    position: relative;
+  }
+
+  &__title {
+    color: $color-black;
+    text-align: center;
+    font-family: $font-primary;
+    font-size: $font-size-title;
+    font-style: normal;
+    font-weight: $font-weight-regular;
+    line-height: normal;
+    margin-bottom: 46px;
+
+    @include media-sm {
+      font-size: $font-size-title-mobile;
+      margin-bottom: 29px;
+    }
+  }
+
+  &__card {
+    padding: 49px 41px 57px 41px;
+    background-color: $color-beige;
+    max-width: 474px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 8px;
+
+    @include media-sm {
+      padding: 10px 13px 32px 13px;
+    }
+  }
+
+  &__card-name {
+    text-align: center;
+    color: $color-black;
+    font-family: $font-primary;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: $font-weight-regular;
+    line-height: normal;
+    margin-bottom: 22px;
+  }
+
+  &__card-text {
+    text-align: center;
+    color: $color-black;
+    font-family: $font-secondary;
+    font-size: $font-size-text;
+    font-style: normal;
+    font-weight: $font-weight-light;
+    line-height: 28px;
+
+    @include media-sm {
+      font-size: $font-size-text-mobile;
+    }
+  }
+
+  &__arrow-left {
+    z-index: 10;
+    cursor: pointer;
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(-50%, -50%);
+
+    @include media-md {
+      display: none;
+    }
+  }
+
+  &__arrow-right {
+    z-index: 10;
+    cursor: pointer;
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translate(-50%, -50%);
+
+    @include media-md {
+      display: none;
+    }
+  }
+}
+
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #debca0 !important;
+
+  border: 1px solid #eee7e1 !important;
+}
+
+.swiper-pagination-bullet {
+  background: $color-white !important;
+  border: 1px solid #debca0 !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination {
+  bottom: -27px !important;
+
+}

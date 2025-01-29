@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos/aos.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="logo header__logo" href="/">
+          <svg
+            class="logo__img"
+            width="46"
+            height="58"
+            viewBox="0 0 46 58"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.34193 52.592C5.11667 53.5002 6.98169 54.1482 8.94349 54.509C9.8862 54.6827 10.8372 54.7836 11.7951 54.8603C12.9083 54.9495 14.0138 54.891 15.1158 54.8009C17.151 54.6342 19.0919 54.0828 20.9413 53.2148C23.378 52.0714 25.4396 50.4493 27.0867 48.3265C28.7204 46.2216 29.7708 43.8463 30.2313 41.2168C30.4826 39.7831 30.5455 38.3356 30.4396 36.8903C30.2638 34.4916 29.5203 32.2688 28.2048 30.2457C26.6766 27.896 24.7655 25.9092 22.4583 24.317C20.5819 23.0224 18.6757 21.7715 16.7851 20.4973C14.6822 19.0801 12.5793 17.6625 10.6106 16.059C10.0984 15.6419 9.59193 15.2175 9.10061 14.7761C8.24254 14.0056 7.73733 13.0306 7.58542 11.8971C7.4691 11.0283 7.5316 10.1564 7.74775 9.29923C8.16745 7.63646 9.08325 6.32538 10.5086 5.36904C11.766 4.52574 13.1579 4.00772 14.6358 3.72402C16.1154 3.43989 17.6037 3.49663 19.0906 3.68894C20.8623 3.91763 22.539 4.45038 24.1271 5.26119C24.506 5.4548 24.8662 5.68479 25.2334 5.90005C25.4465 6.02479 25.5967 6.20584 25.6319 6.45142C25.7794 7.48096 25.9179 8.51181 26.0611 9.55174C25.8532 9.55478 25.8563 9.39409 25.8003 9.3027C25.5676 8.92111 25.345 8.53346 25.1254 8.14408C24.4105 6.87978 23.3723 5.95852 22.0889 5.3058C20.6696 4.58378 19.1675 4.14026 17.5772 3.99603C15.7807 3.83317 14.1006 4.1931 12.5455 5.10223C10.8992 6.06464 9.93351 7.52644 9.57631 9.3707C9.30938 10.748 9.68698 11.9352 10.8306 12.8366C12.4891 14.1438 14.21 15.3608 15.996 16.487C17.69 17.5551 19.3901 18.6145 21.0668 19.7099C22.8168 20.8529 24.4904 22.1016 26.0524 23.4941C27.7794 25.0339 29.3063 26.7447 30.5273 28.7167C31.7734 30.7295 32.6358 32.8916 33.0364 35.2275C33.1514 35.8975 33.2139 36.575 33.2256 37.2589C33.2599 39.227 33.0954 41.1726 32.5642 43.0723C31.9014 45.4415 30.8033 47.6032 29.1839 49.4548C27.2356 51.6828 24.8137 53.2399 21.9787 54.1192C20.8411 54.4722 19.6883 54.7862 18.5264 55.0487C16.7725 55.445 14.9951 55.5797 13.1922 55.4497C11.9157 55.3575 10.6423 55.2644 9.38751 55.0067C7.39141 54.5965 5.49731 53.9061 3.71259 52.9203C3.56719 52.8402 3.39705 52.7748 3.35582 52.5803L3.34106 52.5907L3.34193 52.592Z"
+            />
+            <path
+              d="M34.3958 41.5893C34.3741 41.5403 34.3416 41.5031 34.3468 41.4719C34.4197 41.0314 34.4982 40.5922 34.5751 40.1522C34.638 39.7922 34.7491 39.4552 34.97 39.1538C36.7756 36.6889 37.8403 33.8995 38.533 30.9538C38.9583 29.146 39.1762 27.3108 39.1892 25.4518C39.1979 24.1529 39.1918 22.8548 39.0351 21.5628C38.5338 17.4269 37.2074 13.6084 34.6193 10.2924C31.4479 6.22793 27.3125 3.71796 22.2487 2.73433C20.0985 2.31679 17.9323 2.28214 15.7543 2.45626C14.562 2.55155 13.3854 2.72697 12.2218 2.99724C11.9553 3.05917 11.6923 3.13627 11.4258 3.20644C11.358 3.04878 11.4822 2.9981 11.5603 2.96735C11.8168 2.86687 12.0772 2.76681 12.3455 2.70618C13.2396 2.5052 14.1441 2.377 15.0577 2.28907C16.8029 2.12145 18.5503 2.1063 20.2964 2.19725C21.7231 2.27132 23.1337 2.50304 24.526 2.82702C26.6085 3.31169 28.6228 3.99386 30.5343 4.95714C35.0291 7.22282 38.2608 10.6978 40.3403 15.2543C41.2387 17.2229 41.7782 19.298 42.0612 21.4419C42.1836 22.371 42.2756 23.3014 42.2903 24.2391C42.3238 26.3207 42.0199 28.3507 41.3967 30.3375C40.5225 33.1229 39.276 35.7208 37.5208 38.0632C36.6124 39.2751 35.5794 40.3813 34.5495 41.4896C34.51 41.5321 34.4496 41.5555 34.3967 41.5893H34.3958Z"
+            />
+            <path
+              d="M27.2725 45.6316C27.1666 45.8309 27.1375 45.9703 27.0533 46.0253C26.8775 46.1401 26.6792 46.2306 26.4786 46.296C25.1397 46.7335 23.7742 47.0497 22.374 47.2316C20.8693 47.4274 19.3602 47.4867 17.845 47.482C15.6271 47.475 13.4092 47.4755 11.1917 47.4729C11.0255 47.4729 10.8593 47.4729 10.7169 47.4729C10.6375 47.3239 10.7239 47.2671 10.7777 47.2121C11.5307 46.4385 11.8306 45.4766 11.9127 44.4345C11.9513 43.9472 11.94 43.4556 11.94 42.9657C11.94 35.2786 11.9378 27.591 11.937 19.9039C11.937 19.6752 11.9478 19.4465 11.9556 19.1507C12.1067 19.2187 12.2048 19.246 12.2838 19.3006C12.8628 19.6995 13.4335 20.1105 14.0168 20.5034C14.3649 20.7377 14.5511 21.0374 14.529 21.464C14.5168 21.6975 14.529 21.9322 14.529 22.1666C14.529 30.1092 14.529 38.0524 14.5299 45.995C14.5299 46.2501 14.529 46.5065 14.5503 46.7604C14.5702 46.996 14.7052 47.1575 14.947 47.1961C15.1358 47.2264 15.3276 47.2489 15.5181 47.2511C16.8402 47.2671 18.1627 47.3052 19.4843 47.2823C22.0199 47.2381 24.4869 46.8245 26.8259 45.7958C26.9361 45.7473 27.052 45.7113 27.2729 45.6303L27.2725 45.6316Z"
+            />
+          </svg>
+        </a>
+        <nav class="header__navigation">
+          <ul class="header__navigation-list">
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#home">home</a>
+            </li>
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#about">ABOUT</a>
+            </li>
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#services">SERVICES</a>
+            </li>
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#reviews">REVIEWS</a>
+            </li>
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#contacts">CONTACTS</a>
+            </li>
+            <li class="header__navigation-item">
+              <div class="language-switch">
+                <span>EN</span>
+                <svg
+                  width="13"
+                  height="16"
+                  viewBox="0 0 15 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.51207 1L7.5 16.8124M14 10.7893L7.5 17L1 10.7884"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <button class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="first-screen anchor" id="home">
+        <video class="first-screen__video" autoplay muted loop playsinline>
+          <source src="assets/img/hero_bg.mp4" type="video/mp4" />
+          Ваш браузер не поддерживает HTML5 видео.
+        </video>
+        <div class="first-screen__overlay"></div>
+        <div class="container">
+          <div class="first-screen__content">
+            <h1 class="first-screen__title">Massage Therapy for Body & Soul</h1>
+            <p class="first-screen__subtitle">
+              Every session is a step towards harmony, let me be your guide.
+            </p>
+            <button class="first-screen__btn btn">book now</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-me anchor" id="about">
+        <div class="container">
+          <div class="about-me__images">
+            <img
+              data-aos="fade-down-right"
+              data-aos-easing="linear"
+              data-aos-duration="700"
+              src="assets/img/about-me-1.png"
+              alt="Main Image"
+              class="about-me__main-image"
+            />
+            <img
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="700"
+              src="assets/img/about-me-2.png"
+              alt="Circle Image"
+              class="about-me__circle-image"
+            />
+          </div>
+          <!-- Правая часть с текстом -->
+          <div class="about-me__info">
+            <h2
+              class="about-me__title"
+              data-aos="zoom-out-left"
+              data-aos-easing="linear"
+              data-aos-duration="700"
+            >
+              About me
+            </h2>
+            <p class="about-me__text">
+              My name is Daria. I am a professional with 15 years of experience
+              in massage therapy, a specialist in Renata Franka's lymphatic
+              drainage technique and a certified osteopath with over 10,000
+              hours of practice.
+            </p>
+            <p class="about-me__text">
+              My main goal is to help each client find harmony of body and mind
+              using an individualized approach and a combination of different
+              techniques, from lymphatic drainage and craniosacral therapy to
+              visceral massage.
+            </p>
+            <p class="about-me__text">
+              I believe that the hands of a master can not only relieve pain and
+              stress, but also restore vital energy, create comfort and
+              confidence in your body. For me, this is not just a job – it is an
+              art that I am perfecting every day.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="anchor services" id="services">
+        <div class="container">
+          <h2 class="services__title">My services</h2>
+          <div class="services__grid">
+            <div class="services-card">
+              <div class="services-card__price">
+                <img
+                  class="services-card__img"
+                  src="assets/img/serv-1.jpg"
+                  alt=""
+                />
+                <span>500 AED / 90m</span>
+              </div>
+              <h3 class="services-card__title">Lymphatic drainage</h3>
+              <p class="services-card__description">
+                Lymphatic drainage uses strong pressure, fast rhythm, and
+                specific maneuvers to deliver quick results. It reduces
+                swelling, activates circulation, and stimulates fluid transport,
+                helping to diminish cellulite. This leads to reduced puffiness,
+                improved body contours, and enhanced metabolism.
+              </p>
+              <button class="services-card__button btn">Book</button>
+            </div>
+            <div class="services-card">
+              <div class="services-card__price">
+                <img
+                  class="services-card__img"
+                  src="assets/img/serv-2.jpg"
+                  alt=""
+                />
+                <span>500 AED / 90m</span>
+              </div>
+              <h3 class="services-card__title">Miracle Face</h3>
+              <p class="services-card__description">
+                MIRACLE FACE massage offers an instant lifting effect, reducing
+                puffiness and enhancing facial contours. It promotes natural
+                skin regeneration, making it perfect for brides and post-surgery
+                recovery. Utilizing lymphatic drainage and modeling techniques,
+                it delivers impressive results!
+              </p>
+              <button class="services-card__button btn">Book</button>
+            </div>
+            <div class="services-card">
+              <div class="services-card__price">
+                <img
+                  class="services-card__img"
+                  src="assets/img/serv-3.jpg"
+                  alt=""
+                />
+                <span>500 AED / 90m</span>
+              </div>
+              <h3 class="services-card__title">Modeling massage</h3>
+              <p class="services-card__description">
+                Modeling massage is a manual massage technique that uses
+                vigorous, quick, and intense movements all over the body. This
+                massage provides impressive results as it aims to model
+                adipocytes, which means redistributing fat deposits to targeted
+                areas, thus improving body contours.
+              </p>
+              <button class="services-card__button btn">Book</button>
+            </div>
+            <div class="services-card">
+              <div class="services-card__price">
+                <img
+                  class="services-card__img"
+                  src="assets/img/serv-1.jpg"
+                  alt=""
+                />
+                <span>500 AED / 90m</span>
+              </div>
+              <h3 class="services-card__title">Lymphatic drainage</h3>
+              <p class="services-card__description">
+                Lymphatic drainage uses strong pressure, fast rhythm, and
+                specific maneuvers to deliver quick results. It reduces
+                swelling, activates circulation, and stimulates fluid transport,
+                helping to diminish cellulite. This leads to reduced puffiness,
+                improved body contours, and enhanced metabolism.
+              </p>
+              <button class="services-card__button btn">Book</button>
+            </div>
+            <div class="services-card">
+              <div class="services-card__price">
+                <img
+                  class="services-card__img"
+                  src="assets/img/serv-2.jpg"
+                  alt=""
+                />
+                <span>500 AED / 90m</span>
+              </div>
+              <h3 class="services-card__title">Miracle Face</h3>
+              <p class="services-card__description">
+                MIRACLE FACE massage offers an instant lifting effect, reducing
+                puffiness and enhancing facial contours. It promotes natural
+                skin regeneration, making it perfect for brides and post-surgery
+                recovery. Utilizing lymphatic drainage and modeling techniques,
+                it delivers impressive results!
+              </p>
+              <button class="services-card__button btn">Book</button>
+            </div>
+            <div class="services-card">
+              <div class="services-card__price">
+                <img
+                  class="services-card__img"
+                  src="assets/img/serv-3.jpg"
+                  alt=""
+                />
+                <span>500 AED / 90m</span>
+              </div>
+              <h3 class="services-card__title">Modeling massage</h3>
+              <p class="services-card__description">
+                Modeling massage is a manual massage technique that uses
+                vigorous, quick, and intense movements all over the body. This
+                massage provides impressive results as it aims to model
+                adipocytes, which means redistributing fat deposits to targeted
+                areas, thus improving body contours.
+              </p>
+              <button class="services-card__button btn">Book</button>
+            </div>
+            <div class="services-card">
+              <div class="services-card__price">
+                <img
+                  class="services-card__img"
+                  src="assets/img/serv-1.jpg"
+                  alt=""
+                />
+                <span>500 AED / 90m</span>
+              </div>
+              <h3 class="services-card__title">Lymphatic drainage</h3>
+              <p class="services-card__description">
+                Lymphatic drainage uses strong pressure, fast rhythm, and
+                specific maneuvers to deliver quick results. It reduces
+                swelling, activates circulation, and stimulates fluid transport,
+                helping to diminish cellulite. This leads to reduced puffiness,
+                improved body contours, and enhanced metabolism.
+              </p>
+              <button class="services-card__button btn">Book</button>
+            </div>
+            <div class="services-card">
+              <div class="services-card__price">
+                <img
+                  class="services-card__img"
+                  src="assets/img/serv-2.jpg"
+                  alt=""
+                />
+                <span>500 AED / 90m</span>
+              </div>
+              <h3 class="services-card__title">Miracle Face</h3>
+              <p class="services-card__description">
+                MIRACLE FACE massage offers an instant lifting effect, reducing
+                puffiness and enhancing facial contours. It promotes natural
+                skin regeneration, making it perfect for brides and post-surgery
+                recovery. Utilizing lymphatic drainage and modeling techniques,
+                it delivers impressive results!
+              </p>
+              <button class="services-card__button btn">Book</button>
+            </div>
+            <div class="services-card">
+              <div class="services-card__price">
+                <img
+                  class="services-card__img"
+                  src="assets/img/serv-3.jpg"
+                  alt=""
+                />
+                <span>500 AED / 90m</span>
+              </div>
+              <h3 class="services-card__title">Modeling massage</h3>
+              <p class="services-card__description">
+                Modeling massage is a manual massage technique that uses
+                vigorous, quick, and intense movements all over the body. This
+                massage provides impressive results as it aims to model
+                adipocytes, which means redistributing fat deposits to targeted
+                areas, thus improving body contours.
+              </p>
+              <button class="services-card__button btn">Book</button>
+            </div>
+          </div>
+          <button class="services__show-more btn-secondary hidden" data-state="show-more" data-show-more="Show More" data-show-less="Show Less">
+            Show more
+          </button>
+        </div>
+      </section>
+
+      <section class="massage-cosmetics">
+        <div class="container">
+          <h2 class="massage-cosmetics__title">massage cosmetics</h2>
+          <div class="massage-cosmetics__text">
+            <p class="massage-cosmetics__description">
+              During the massage, I use premium cosmetics of the Gerard's brand
+              to provide maximum comfort for your skin.
+            </p>
+          </div>
+          <div class="massage-cosmetics__logo">
+            <img
+              src="assets/img/mesages-logo.png"
+              alt="Gerard's Logo"
+              class="massage-cosmetics__logo-image"
+            />
+          </div>
+          <div class="massage-cosmetics__products">
+            <img
+              src="assets/img/cometics-product-1.png"
+              alt="Gerard's Product 1"
+              class="massage-cosmetics__product"
+            />
+            <img
+              src="assets/img/cometics-product-2.png"
+              alt="Gerard's Product 2"
+              class="massage-cosmetics__product"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="container">
+          <div class="gallery__inner">
+            <div
+              class="gallery__blok"
+              data-aos="fade-right"
+              data-aos-easing="linear"
+              data-aos-duration="800"
+            >
+              <img
+                class="gallery__blok-inner gallery__blok-img"
+                src="assets/img/gallery-1.png"
+                alt="photo one"
+              />
+            </div>
+            <h2 class="gallery__title">DARIA SHA THERAPY</h2>
+
+            <img class="gallery__logo" src="assets/img/logo.svg" alt="logo" />
+            <div
+              class="gallery__blok"
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="800"
+            >
+              <video
+                class="gallery__blok-inner gallery__blok-video"
+                src="assets/img/expert.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+              ></video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="comments anchor" id="reviews">
+        <div class="container">
+          <h2
+            class="comments__title"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="800"
+          >
+            What my clients say about me
+          </h2>
+          <!-- Slider main container -->
+          <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="comments__card">
+                  <object class="comments__card-img" type="image/svg+xml" data="assets/img/coments-1.svg"></object>
+                  <h3 class="comments__card-name">Iryna</h3>
+                  <p class="comments__card-text">
+                    Thank you for you! You not only helped with the headaches,
+                    but also supported with words. Your appointment is like
+                    going to a doctor, a psychologist, a mom, a friend and
+                    spiritual counselor. I've only known you for 60 minutes, and
+                    everything inside of me turned upside down. Thank you for
+                    everything, for your support and for for making my back and
+                    neck feel better! God bless you!
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="comments__card">
+                  <object class="comments__card-img" type="image/svg+xml" data="assets/img/coments-1.svg"></object>
+                  <h3 class="comments__card-name">Iryna</h3>
+                  <p class="comments__card-text">
+                    Thank you for you! You not only helped with the headaches,
+                    but also supported with words. Your appointment is like
+                    going to a doctor, a psychologist, a mom, a friend and
+                    spiritual counselor. I've only known you for 60 minutes, and
+                    everything inside of me turned upside down. Thank you for
+                    everything, for your support and for for making my back and
+                    neck feel better! God bless you!
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="comments__card">
+                  <object class="comments__card-img" type="image/svg+xml" data="assets/img/coments-1.svg"></object>
+                  <h3 class="comments__card-name">Iryna</h3>
+                  <p class="comments__card-text">
+                    Thank you for you! You not only helped with the headaches,
+                    but also supported with words. Your appointment is like
+                    going to a doctor, a psychologist, a mom, a friend and
+                    spiritual counselor. I've only known you for 60 minutes, and
+                    everything inside of me turned upside down. Thank you for
+                    everything, for your support and for for making my back and
+                    neck feel better! God bless you!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="comments__arrow-left">
+              <img src="assets/img/arrow-left.svg" alt="" />
+            </div>
+            <div class="comments__arrow-right">
+              <img src="assets/img/arrow-right.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="contacts anchor" id="contacts">
+        <div class="container">
+          <h2 class="contacts__title contacts__title--mobile">Contacts</h2>
+          <div class="contacts__info">
+            <h2 class="contacts__title contacts__title--desktop">Contacts</h2>
+            <div>
+              <p class="contacts__address">
+                Al Seef Tower 2 - GR-010 Cluster U - Jumeirah Lake Towers -
+                Dubai - UAE
+              </p>
+              <div class="contacts__phone">
+                <a class="contacts__phone-link" href="tel:+971585607441"
+                  >+971 58 560 7441</a
+                >
+              </div>
+              <div class="contacts__links">
+                <a class="contacts__links-link" href="#"
+                  ><img
+                    class="contacts__links-img"
+                    src="assets/img/instagram.svg"
+                    alt="Instagram"
+                  />
+                  <p class="contacts__links-text">Instagram</p>
+                </a>
+                <a class="contacts__links-link" href="#"
+                  ><img
+                    class="contacts__links-img"
+                    src="assets/img/whatsapp.svg"
+                    alt="WhatsApp"
+                  />
+                  <p class="contacts__links-text">WhatsApp</p></a
+                >
+                <a class="contacts__links-link" href="#"
+                  ><img
+                    class="contacts__links-img"
+                    src="assets/img/telegram.svg"
+                    alt="Telegram"
+                  />
+                  <p class="contacts__links-text">Telegram</p></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="contacts__map">
+            <iframe
+              class="contacts__map-iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7769.322640442143!2d30.670587117921205!3d46.490879356810375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c62e0404990441%3A0xbc3b692ec0f8b167!2z0YPQuy4g0JzQuNGF0LDQuNC70LAg0JPRgNGD0YjQtdCy0YHQutC-0LPQviwg0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1738002193800!5m2!1sru!2sua"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <a class="footer__logo" href="#">
+            <img src="assets/img/logo.svg" alt="Логотип" />
+          </a>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li><a class="footer__nav-link" href="#home">home</a></li>
+              <li><a class="footer__nav-link" href="#services">SERVICES</a></li>
+              <li><a class="footer__nav-link" href="#about">ABOUT</a></li>
+              <li><a class="footer__nav-link" href="#reviews">REVIEWS</a></li>
+            </ul>
+          </nav>
+          <div class="footer__button">
+            <a href="#" class="btn footer__btn">contact me</a>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p>
+            Copyright 2025. All rights reserved. Designed by Alyona Dymyrova
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

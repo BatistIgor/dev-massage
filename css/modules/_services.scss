@@ -1,0 +1,112 @@
+.services {
+  margin-top: 38px;
+  scroll-margin-top: 130px;
+
+  & > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    color: $color-black;
+    text-align: center;
+    font-family: $font-primary;
+    font-size: $font-size-title;
+    font-weight: $font-weight-regular;
+    line-height: normal;
+    margin-bottom: 40px;
+
+    @include media-sm {
+      font-size: $font-size-title-mobile;
+      margin-bottom: 23px;
+    }
+  }
+
+  &__grid {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 17px;
+    margin-bottom: $font-size-title;
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    max-width: 376px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 12px 12px 25px 2px rgba(146, 144, 144, 0.25);
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    &__price {
+      max-width: 376px;
+      width: 100%;
+      position: relative;
+      margin-bottom: 30px;
+
+      & > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $color-white;
+        text-align: center;
+        font-family: $font-secondary;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: $font-weight-bold;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+    }
+
+    &__img {
+      border-radius: 4px 4px 0 0;
+      width: 100%;
+      min-height: 179px;
+      object-fit: cover;
+    }
+
+    &__title {
+      margin: 0 24px;
+      align-self: start;
+      color: #0f0f0f;
+      text-align: start;
+      font-family: $font-secondary;
+      font-size: $font-size-subtitle;
+      font-weight: $font-weight-regular;
+      line-height: normal;
+      margin-bottom: 12px;
+    }
+
+    &__description {
+      color: #202020;
+      margin: 0 30px;
+      font-family: $font-secondary;
+      font-size: $font-size-text;
+      font-style: normal;
+      font-weight: $font-weight-light;
+      line-height: 30px;
+      margin-bottom: 30px;
+
+      @include media-sm {
+        font-size: $font-size-text-mobile;
+      }
+    }
+
+    &__button {
+      padding: 13px 42px;
+    }
+  }
+
+  &__show-more {
+    padding: 13px 42px;
+  }
+}

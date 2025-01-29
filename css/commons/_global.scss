@@ -1,0 +1,126 @@
+$font-size-hero-title: 54px; // для заголовка h1
+$font-size-hero-title-mobile: 40px;
+
+$font-size-title: 40px; // для заголовков секций
+$font-size-title-mobile: 34px;
+
+$font-size-navigation: 20px; //для навигации
+$font-size-navigation-movile: 22px;
+
+$font-size-subtitle: 22px; // для подзаголовков
+
+$font-size-text: 18px; // для secondary текста
+$font-size-text-mobile: 16px;
+
+$font-weight-light: 300; // Лёгкий
+$font-weight-regular: 400; // Обычный
+$font-weight-bold: 700; // Жирный
+
+// Цвета
+$color-green: #77988a;
+$color-black: #202020;
+$color-white: #ffffff;
+$color-beige-nav: #e7e7e7; // текст навигации
+$color-beige: #eee7e1;
+$color-grey: #f6f6f6;
+$color-grey-transparent: rgba(119, 152, 138, 0.06);
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+// Использование переменных
+body {
+  font-family: $font-secondary;
+  font-weight: $font-weight-regular;
+  background-color: $color-white;
+}
+
+p {
+  font-size: $font-size-text;
+  font-family: $font-secondary;
+}
+
+$spacing-between-sections: 120px; // Спейсинг между секциями
+$spacing-between-mobile-sections: 80px;
+
+section {
+  margin-bottom: $spacing-between-sections;
+
+  @include media-sm {
+    margin-bottom: $spacing-between-mobile-sections;
+  }
+}
+
+.logo {
+  &__img {
+    width: 46px;
+    height: 58px;
+
+    @include media-sm {
+      width: 29px;
+      height: 36px;
+    }
+  }
+}
+
+.btn {
+  border: none;
+  background-color: $color-green;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+
+  color: $color-white;
+  text-align: center;
+  font-family: $font-montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  line-height: normal;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-green;
+    border-color: $color-green;
+  }
+}
+
+.btn-secondary {
+  border-radius: 6px;
+  border: 1px solid $color-black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: transparent;
+
+  color: $color-black;
+  text-align: center;
+  font-family: $font-secondary;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+
+  &:hover {
+    color: $color-green;
+    border-color: $color-green;
+  }
+}
+
+.hidden {
+  opacity: 0 !important; 
+  transform: translateY(20px) !important; 
+  position: absolute !important;
+  height: 0 !important;
+  pointer-events: none !important;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

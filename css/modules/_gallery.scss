@@ -1,0 +1,82 @@
+.gallery {
+  & > .container {
+    padding: 0;
+    max-width: 1441px;
+    width: 100%;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media-lg {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    max-width: 63px;
+    max-height: 78px;
+    margin: 0 30px;
+
+    @include media-lg {
+      display: none;
+    }
+  }
+
+  &__img {
+    width: 631px;
+    height: 402px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__blok {
+    width: 631px;
+    height: 395px;
+    overflow: hidden;
+    position: relative;
+
+    &-inner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &-video {
+      object-position: center calc(100% - 20%);
+      border-radius: 8px 0px 0px 8px;
+    }
+
+    &-img {
+      border-radius: 0px 8px 8px 0px;
+    }
+
+    @include media-sm {
+      width: 393px;
+      height: 250px;
+    }
+  }
+
+  &__title {
+    display: none;
+    word-spacing: 9999px;
+    color: $color-black;
+    text-align: center;
+    font-family: $font-primary;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: $font-weight-regular;
+    line-height: normal;
+    padding: 30px 0;
+
+    @include media-lg {
+      display: flex;
+    }
+  }
+}

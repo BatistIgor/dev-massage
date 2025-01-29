@@ -1,0 +1,67 @@
+// Брекпоинты как в Bootstrap
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px; // Средние экраны (маленькие устройства, планшеты)
+$breakpoint-md: 768px; // Средне-большие экраны (средние устройства, настольные компьютеры)
+$breakpoint-lg: 992px; // Большие экраны (большие устройства, настольные компьютеры)
+$breakpoint-xl: 1200px; // Очень большие экраны (экстра-большие устройства, большие настольные компьютеры)
+
+// Миксины для медиа-запросов
+@mixin mobile-xs {
+  @media (max-width: 374px) {
+    @content;
+  }
+}
+
+@mixin media-xs {
+  @media (max-width: $breakpoint-xs) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+  @media (max-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media (max-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media (max-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
+// Контейнеры
+@mixin container-fixed() {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1164px;
+
+  @include media-sm {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.container {
+  @include container-fixed();
+  &--header {
+    padding: 0 30px 0;
+  }
+  &--status {
+    padding: 0 34px 0;
+  }
+}
